@@ -11,7 +11,7 @@ function confirm() {
 document.getElementById("nome").innerHTML = nomePasseggero;
 document.getElementById("codiceCp").innerHTML = codice;
 document.getElementById("carrozza").innerHTML = posto;
-generazione.classList.toggle("genera")
+generazione.classList.remove("genera")
 
     if (age === "minor") {
       document.getElementById("price").innerHTML = `${((tariffa * 80) / 100).toFixed(2)}€`;
@@ -27,5 +27,5 @@ generazione.classList.toggle("genera")
 
 function rimuovi(){
     const rimuovi = document.querySelector(".ticket");
-    rimuovi.classList.toggle("genera");
+    rimuovi.classList.add("genera");
 }
