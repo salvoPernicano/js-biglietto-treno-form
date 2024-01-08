@@ -13,6 +13,7 @@ body{
 h1{
     color: white;
     margin-block: 2em;
+    text-transform: uppercase;
 }
 
 .container{
@@ -22,7 +23,7 @@ h1{
     color:  #b91450;
     font-weight: bold;
     border-radius: 5px;
-    padding: 5em;
+    padding: 3em;
 }
 
 .container input[type="button"]{
@@ -46,7 +47,38 @@ input{
 .inputContainer div{
     display: flex;flex-direction: column;
 }
+.container.ticket {
+    text-align: left;
+}
+.container.ticket h2{
+    color: black;
+    text-transform: uppercase;
+}
+.container.ticket .ticketGroup{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+}
 
+.ticketDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+    padding: 1em;
+}
 
+.ticketDetails:first-of-type{
+    background-color: grey;
+}
 
+.ticketDetails h3,
+.ticketDetails span{
+    margin-block: 15px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.genera{
+    display: none;
+}
