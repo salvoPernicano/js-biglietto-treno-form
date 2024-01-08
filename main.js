@@ -3,8 +3,12 @@ function confirm() {
     let age = document.getElementById("age").value;
     let tariffa = kilometri * 0.21;
     let nomePasseggero = document.getElementById("name").value;
+    let codice = Math.floor(Math.random()* 99999 + 1);
+    let posto = Math.floor(Math.random()* 9 + 1);
   
 document.getElementById("nome").innerHTML = nomePasseggero;
+document.getElementById("codiceCp").innerHTML = codice;
+document.getElementById("carrozza").innerHTML = posto;
 
     if (age === "minor") {
       document.getElementById("price").innerHTML = `${((tariffa * 80) / 100).toFixed(2)}€`;
