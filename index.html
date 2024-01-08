@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Calcola il prezzo del tuo biglietto</h1>
+        <form action="#">
+            <label for="name">Nome Cognome</label>
+            <input type="text" required name="name" min="1" id="name">
+            <label for="kilometri">Km da percorrere</label>
+            <input type="number" required name="age" min="1" max="10000" id="kilometri">
+            <label for="age">Fascia di eta</label>
+            <select id="age" name="ageRange" form="" required>
+              <option value="minor">Minorenne -18 </option>
+              <option value="senior">Senior 65+ </option>
+              <option value="grown">Maggiorenne +18</option>
+            </select>
+           <input type="button" value="Genera"  onclick="confirm()" id="">
+        </form>
+        <h2>Totale <span id="price"></span></h2>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>

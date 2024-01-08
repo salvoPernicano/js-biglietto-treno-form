@@ -1,0 +1,12 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: #b91450;
+}
+div{
+    background-color: white;
+}
